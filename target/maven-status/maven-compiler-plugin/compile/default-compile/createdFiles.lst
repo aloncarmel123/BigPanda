@@ -1,0 +1,7 @@
+com\springbootstarter\stream\StreamProcessor$1.class
+com\springbootstarter\controller\EventsController.class
+com\springbootstarter\stream\StreamProcessor.class
+com\springbootstarter\model\Event.class
+com\springbootstarter\service\EventsService.class
+com\springbootstarter\config\ConfigProperties.class
+com\springbootstarter\Main.class

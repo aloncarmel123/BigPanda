@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="main" class="com.springbootstarter.Main">
+        <property name="streamProcessor" ref="streamProcessor" />
+    </bean>
+
+    <bean id="eventsController" class="com.springbootstarter.controller.EventsController">
+        <property name="EventsService" ref="eventsService" />
+    </bean>
+
+    <bean id="streamProcessor" class="com.springbootstarter.stream.StreamProcessor">
+        <property name="EventsService" ref="eventsService" />
+    </bean>
+
+    <bean id="eventsService" class="com.springbootstarter.service.EventsService" scope="singleton">
+    </bean>
+
+</beans>
